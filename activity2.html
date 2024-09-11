@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Activity 2</title>
+</head>
+<body>
+    <h2>Javascript Conditional Statements</h2>
+    <button onclick="myfunction()">Click here!</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var time=new Date().getHours();
+        var text='';
+        function myfunction(){
+            if (time<10){
+                text="Good Morning";
+            }
+            else if(time<20){
+                text="Good Day";
+            }
+            else{
+                text="Good Evening";
+            }
+            document.getElementById("p1").innerHTML="Current hour is "+time;
+            document.getElementById("p2").innerHTML=text;
+        }
+    </script>
+</body>
+</html>
